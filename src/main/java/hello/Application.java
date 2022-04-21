@@ -11,7 +11,7 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello Dockerfile World";
+        return "Hello Oracle Cloud World";
     }
 
 }
