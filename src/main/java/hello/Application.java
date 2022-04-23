@@ -11,7 +11,7 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello Oracle Cloud World!!! - Trigger";
+        return "Hello Oracle Cloud World!!! - Blue/Green Deployment";
     }
 
 }
