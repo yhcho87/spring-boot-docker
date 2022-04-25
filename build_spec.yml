@@ -5,6 +5,7 @@ shell: bash
 env:
   variables:
     appName: "spring-boot-docker"
+    repoName: "devops-handson-yhcho"
 
   exportedVariables:
     - APP_NAME
@@ -46,7 +47,7 @@ steps:
     timeoutInSeconds: 30
     command: |
       TENANCY_NAMESPACE=`oci os ns get --query data --raw-output`
-      REPO_NAME=$appName
+      REPO_NAME=$repoName/$appName
       OCIR_PATH=$OCI_RESOURCE_PRINCIPAL_REGION.ocir.io/$TENANCY_NAMESPACE/$REPO_NAME      
 
   - type: Command
